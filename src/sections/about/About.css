@@ -1,0 +1,10 @@
+#about p {
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 600px) {
+    .about__container{
+        width: 80%;
+        /* margin: 0 auto; */
+    }
+}
