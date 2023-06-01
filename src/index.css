@@ -69,14 +69,14 @@ section > h2 {
 
 section > p {
   text-align: center;
-  margin: 0.5rem auto 4rem;
+  margin: 0.5rem auto 1rem;
   width: 40%;
 }
 
 
 /* GENERAL SECTION STYLES */
 a {
-  color: var(--color-white);
+  /* color: var(--color-white); */
   transition: var(--transition);
 }
 
@@ -84,6 +84,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: var(--color-black);
+  text-align: center;
 }
 
 h1 {
@@ -135,7 +136,7 @@ img {
 .btn:hover {
   background-color: transparent;
   border-color: var(--color-light);
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.3rem);
 }
 
 .btn.white {
@@ -149,8 +150,9 @@ img {
 
 .btn.primary {
   background: var(--color-primary);
-  /* text color always white that's why i didn't use a variable color */
   color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .btn.primary:hover {
@@ -179,7 +181,6 @@ img {
 
   section > p {
       width: 72%;
-      margin-bottom: 3rem;
   }
 
   h1 {
