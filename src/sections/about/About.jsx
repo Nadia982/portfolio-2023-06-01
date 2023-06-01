@@ -12,7 +12,7 @@ const About = () => {
         <div className="about__right"> */}
           <p>I am an avid learner and am keen to learn as much as possible about new and existing technologies while making websites and applications that delight and engage users.</p>
         {/* </div> */}
-
+        
       </div>
     </section>
   )

@@ -71,7 +71,7 @@ header{
         max-height: 35vh;
         flex-direction: column-reverse;
         row-gap: 1rem;
-        background: pink;
+        border: 2px solid pink;
     }
 
     .header__container p {
