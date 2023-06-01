@@ -12,7 +12,7 @@ const Header = () => {
           <h3>Natalie Gillam</h3>
           
         </div>
-        <p>I am based in <strong>London, UK</strong> and have been building websites with React and JavaScript since 2022. As at June 2023, I am <strong>open</strong> to new work opportunities. If you would like to get in touch then please:</p> 
+        <p>I am based in <strong>London, UK</strong> and have been building websites with React and JavaScript since 2022. As at June 2023, I am <strong>open to new work opportunities</strong>. If you would like to get in touch then please:</p> 
       
       <div className="header__cta">   
       <a href="https://www.linkedin.com/in/natalie-g-b947331a/" className="btn primary">Message me on LinkedIn</a>
