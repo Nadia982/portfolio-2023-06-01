@@ -1,0 +1,51 @@
+nav {
+    width: 100vw;
+    min-height: 6rem;
+    display: grid;
+    place-items: center;
+    background: var(--color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+    transition: var(--transition);   
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 8.3rem;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 2rem;
+}
+
+#accessibility__options{
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    max-width: 7rem;
+    min-width: 1rem;
+    text-align: center;
+    margin-right: 0;
+}
+
+#accessibility__options p {
+    font-size: 1rem;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Hide nav menu on tablets and phones */
+@media screen and (max-width: 960px) {
+.nav__menu {
+    display: none;
+}
+}

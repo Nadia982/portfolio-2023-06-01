@@ -12,7 +12,7 @@ const Navbar = () => {
       <ul className='nav__menu'>
         {data.map(item=><li key={item.id}><a href={item.link}>{item.title}</a></li>)}
       </ul>
-      <button id="accessibility-options"><IoAccessibility/> </button>
+      <button id="accessibility__options"><IoAccessibility/><p>Accessibility options</p> </button>
       </div>
     </nav>
   )
