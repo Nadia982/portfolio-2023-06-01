@@ -76,7 +76,7 @@ section > p {
 
 /* GENERAL SECTION STYLES */
 a {
-  /* color: var(--color-white); */
+  color: var(--color-white);
   transition: var(--transition);
 }
 
@@ -151,8 +151,7 @@ img {
 .btn.primary {
   background: var(--color-primary);
   color: white;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 0.6em auto;
 }
 
 .btn.primary:hover {
