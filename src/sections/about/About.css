@@ -30,9 +30,19 @@
     margin: 1em 0;
 }
 
+/* MEDIA QUERIES (phones) */
+
 @media screen and (max-width: 600px) {
     .about__container{
         width: 80%;
-        /* margin: 0 auto; */
+    }
+
+    .about__cards{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
     }
 }
+
+ 

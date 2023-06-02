@@ -4,7 +4,7 @@ import {CgWebsite} from 'react-icons/cg'
 
 const data = [
     {id: 1, icon: <FaAward/>, title: 'Experience', desc: '1 year of experience'},
-    {id: 2, icon: <FaBook/>, title: 'Certifications', desc: '2000+ hours of study'},
+    {id: 2, icon: <FaBook/>, title: 'Certifications', desc: '3000+ hours of study'},
     {id: 3, icon: <CgWebsite/>, title: 'Projects', desc: '10+ projects completed'},
 ]
 
