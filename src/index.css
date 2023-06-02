@@ -35,6 +35,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5em;
 }
 
 body {
@@ -80,10 +81,9 @@ a {
 }
 
 /* GENERAL HEADING STYLES */
-h1, h2, h3, h4, h5, h6 {
+.section-link, h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: var(--color-black);
-  text-align: center;
 }
 
 h1 {
@@ -150,7 +150,6 @@ img {
 .btn.primary {
   background: var(--color-primary);
   color: white;
-  margin: 0.2em auto 1em auto;
 }
 
 .btn.primary:hover {

@@ -25,7 +25,6 @@ header{
 
 .header__profile img {
     width: 75px;
-    /* margin-bottom: 1rem; */
     border-radius: 50%;
 }
 
@@ -33,6 +32,10 @@ header{
     width: 30rem;
     text-align: center;
     margin: 0.5rem;
+}
+
+#header .btn.primary {
+    margin: 0.2em auto 1em auto;
 }
 
 .header__socials {

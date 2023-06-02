@@ -1,7 +1,7 @@
-import Image1 from '../../assets/project1.jpg'
-import Image2 from '../../assets/project1.jpg'
-import Image3 from '../../assets/project1.jpg'
-import Image4 from '../../assets/project1.jpg'
+import image1 from '../../assets/image1.png'
+import image2 from '../../assets/image2.png'
+import image3 from '../../assets/image3.png'
+import image4 from '../../assets/image4.png'
 
 const data = [
 {
@@ -9,7 +9,7 @@ const data = [
     // api 
     id: 1, 
     category: "api", 
-    image: Image1, 
+    image: image1, 
     title: "GitHub Repo Gallery (API)",
     desc: "In this project, I used the GitHub API to fetch details of all projects I have hosted on GitHub, and links to those projects",
     demo: "https://nadia982.github.io/github-repo-gallery/",
@@ -20,7 +20,7 @@ const data = [
 // javascript 
     id: 2, 
     category: "javascript", 
-    image: Image2, 
+    image: image2, 
     title: "Guess the Word Game (JavaScript)",
     desc: "A word guessing game programmed with JavaScript",
     demo: "https://nadia982.github.io/guess-the-word/",
@@ -31,7 +31,7 @@ const data = [
 // react 
     id: 3, 
     category: "react", 
-    image: Image3, 
+    image: image3, 
     title: "Sticky Notes application (React)",
     desc: "A sticky notes application built using React that allows users to create, read, update, delete and search notes",
     demo: "https://nadia982.github.io/super-sticky-notes/",
@@ -42,12 +42,12 @@ const data = [
 // react
     id: 4, 
     category: "react", 
-    image: Image4, 
-    title: "Memory Game" (React),
+    image: image4, 
+    title: "Memory Game (React)",
     desc: "A card matching memory game coded with React",
     demo: "https://singular-bunny-5012f1.netlify.app/",
     github: "https://github.com/Nadia982/card-matching-game"
 },
 ]
 
-
+export default data

@@ -5,7 +5,8 @@ import './Skills.css'
 const Skills = () => {
   return (
     <section id="skills">
-      <h2>Skills</h2>
+      <h2><a href="#skills" className="section-link">Skills</a></h2>
+      
       {/* <p>I have skills in:</p> */}
       
       <div className="container skills__container">

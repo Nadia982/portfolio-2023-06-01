@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       
-      <h2>Recent Projects</h2>
+      <h2><a href="#portfolio" className="section-link">Recent Projects</a></h2>
       <p>Here are some projects I have worked on recently. Use the buttons to toggle the different categories.</p>
       <div className="container portfolio__container">
         <ProjectCategories/>
