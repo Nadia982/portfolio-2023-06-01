@@ -15,7 +15,7 @@ const data = [
     {id: 3, icon: <FiFigma/>, title: "Figma"},
     {id: 4, icon: <IoLogoJavascript/>, title: "JavaScript"},
     {id: 5, icon: <IoLogoReact/>, title: "React 18"},
-    {id: 6, icon: <GiHook/>, title: "React Hooks"},
+    {id: 6, icon: <GiHook/>, title: "Hooks"},
     {id: 7, icon: <IoGitBranchOutline/>, title: "Git"},
     {id: 8, icon: <IoLogoGithub/>, title: "GitHub"},
     {id: 9, icon: <TbApi/>, title: "APIs"},

@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 0.9rem;
 }
 
@@ -47,7 +47,6 @@ body {
 /* GENERAL CONTAINER CLASS */
 .container {
   width: var(--container-width-lg);
-  /* margin-inline: auto; */
   margin: 0 auto;
   max-width: 1920px;
 }
@@ -151,7 +150,7 @@ img {
 .btn.primary {
   background: var(--color-primary);
   color: white;
-  margin: 0.6em auto;
+  margin: 0.2em auto 1em auto;
 }
 
 .btn.primary:hover {
@@ -174,8 +173,8 @@ img {
       width: var(--container-width-md);
   }
 
-  section {
-      padding: 8rem 0;
+  header, section {
+      padding: 0.5rem 0;
   }
 
   section > p {
@@ -207,6 +206,7 @@ img {
 
   .btn {
       padding: 0.6rem 1.5rem;
+      
   }
 
   section > p {

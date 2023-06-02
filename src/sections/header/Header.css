@@ -68,9 +68,9 @@ header{
         width: 14rem;
         height: 8rem;
         max-width: 60%;
-        max-height: 35vh;
-        flex-direction: column-reverse;
-        row-gap: 1rem;
+        max-height: 10vh;
+        flex-direction: row-reverse;
+        /* row-gap: 1rem; */
         border: 2px solid pink;
     }
 

@@ -12,12 +12,12 @@ const Header = () => {
           <h3>Natalie Gillam</h3>
           
         </div>
-        <p>I am based in <strong>London, UK</strong> and have been building websites with React and JavaScript since 2022. As at June 2023, I am <strong>open to new work opportunities</strong>. If you would like to get in touch then please:</p> 
+        <p>I am based in <strong>London, UK</strong> and have been building websites with <strong>React and JavaScript</strong> since 2022. As at June 2023, I am <strong>open to new work opportunities</strong>. If you would like to get in touch then please:</p> 
       
       <div className="header__cta">   
       <a href="https://www.linkedin.com/in/natalie-g-b947331a/" className="btn primary">Message me on LinkedIn</a>
       </div>
-      <p>Click on the icons below to see my <strong>skills and experience</strong> in the following technologies:</p>
+     
       </div>
 
       <div className="header__socials">
