@@ -70,8 +70,9 @@ header{
         max-width: 60%;
         max-height: 10vh;
         flex-direction: row-reverse;
-        /* row-gap: 1rem; */
-        border: 2px solid pink;
+    }
+    .header__profile img {
+    border: 2px solid pink;
     }
 
     .header__container p {

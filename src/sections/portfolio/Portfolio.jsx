@@ -1,8 +1,22 @@
 import './Portfolio.css'
+import ProjectCategories from './ProjectCategories'
+import Projects from './Projects'
+import data from './data'
+import { useState } from 'react'
 
 const Portfolio = () => {
+  const [projects, setProjects] = useState(data)
   return (
-    <section id="portfolio"><h2>Portfolio</h2></section>
+    <section id="portfolio">
+      
+      <h2>Recent Projects</h2>
+      <p>Here are some projects I have worked on recently. Use the buttons to toggle the different categories.</p>
+      <div className="container portfolio__container">
+        <ProjectCategories/>
+        <Projects projects={projects}/>
+
+      </div>
+      </section>
   )
 }
 
