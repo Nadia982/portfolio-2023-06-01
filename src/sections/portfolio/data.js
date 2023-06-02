@@ -11,7 +11,7 @@ const data = [
     category: "api", 
     image: image1, 
     title: "GitHub Repo Gallery (API)",
-    desc: "In this project, I used the GitHub API to fetch details of all projects I have hosted on GitHub, and links to those projects",
+    desc: "I used the GitHub API to fetch details of all projects I have hosted on GitHub, and links to those projects",
     demo: "https://nadia982.github.io/github-repo-gallery/",
     github: "https://github.com/Nadia982/github-repo-gallery"
 },
@@ -21,7 +21,7 @@ const data = [
     id: 2, 
     category: "javascript", 
     image: image2, 
-    title: "Guess the Word Game (JavaScript)",
+    title: "Guess the Word Game (JS)",
     desc: "A word guessing game programmed with JavaScript",
     demo: "https://nadia982.github.io/guess-the-word/",
     github: "https://github.com/Nadia982/guess-the-word"
@@ -32,8 +32,8 @@ const data = [
     id: 3, 
     category: "react", 
     image: image3, 
-    title: "Sticky Notes application (React)",
-    desc: "A sticky notes application built using React that allows users to create, read, update, delete and search notes",
+    title: "Sticky Notes (React)",
+    desc: "A sticky notes application that allows users to create, read, update, delete and search notes",
     demo: "https://nadia982.github.io/super-sticky-notes/",
     github: "https://github.com/Nadia982/super-sticky-notes"
 },
