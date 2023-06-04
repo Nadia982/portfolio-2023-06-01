@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="container about__container">
-        <h2>About Me</h2>
+        <h2><a href="#about" className="section-link">About Me</a></h2>
         <div className="about__cards">
           {
             data.map(item => (

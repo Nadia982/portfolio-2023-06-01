@@ -1,11 +1,13 @@
 #about h2 {
-    margin-bottom: 1em;
+    margin: 0 auto 1rem auto;
 }
 
 .about__cards {
+    width: 80%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 31% 34% 31%;
-    gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5em;
     text-align: center;
 }
 
@@ -13,7 +15,7 @@
     font-size: 2rem;
     color: var(--color-black);
     border-radius: var(--border-radius-3);
-    width: fit-content;
+    width: 30%;
     padding: 0.2em 0.2em 0;
 }
 
@@ -27,7 +29,7 @@
 }
 
 #about p {
-    margin: 1em 0;
+    margin: 1em 2em;
 }
 
 /* MEDIA QUERIES (phones) */

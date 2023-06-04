@@ -45,11 +45,13 @@ body {
 }
 
 
-/* GENERAL CONTAINER CLASS */
+/* GENERAL CONTAINER CLASSES */
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1200px;
+  width: 80%;
 }
 
 /* GENERAL SECTION STYLES */
@@ -84,6 +86,7 @@ a {
 .section-link, h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: var(--color-black);
+  text-align: center;
 }
 
 h1 {
@@ -140,6 +143,10 @@ img {
 
 .btn.white {
   background: var(--color-white);
+}
+
+.btn.light {
+  background: var(--color-light);
 }
 
 .btn.white:hover {

@@ -8,10 +8,10 @@ const data = [
     // Github repo gallery 
     // api 
     id: 1, 
-    category: "api", 
+    category: "APIs", 
     image: image1, 
     title: "GitHub Repo Gallery (API)",
-    desc: "I used the GitHub API to fetch details of all projects I have hosted on GitHub, and links to those projects",
+    desc: "This project uses the GitHub API to fetch details of all my projects on GitHub, so these can be searched and viewed from the gallery.",
     demo: "https://nadia982.github.io/github-repo-gallery/",
     github: "https://github.com/Nadia982/github-repo-gallery"
 },
@@ -19,7 +19,7 @@ const data = [
 // Guess the word game
 // javascript 
     id: 2, 
-    category: "javascript", 
+    category: "Javascript", 
     image: image2, 
     title: "Guess the Word Game (JS)",
     desc: "A word guessing game programmed with JavaScript",
@@ -30,7 +30,7 @@ const data = [
 // Sticky notes
 // react 
     id: 3, 
-    category: "react", 
+    category: "React", 
     image: image3, 
     title: "Sticky Notes (React)",
     desc: "A sticky notes application that allows users to create, read, update, delete and search notes",
@@ -41,7 +41,7 @@ const data = [
 // Memory game
 // react
     id: 4, 
-    category: "react", 
+    category: "React", 
     image: image4, 
     title: "Memory Game (React)",
     desc: "A card matching memory game coded with React",
