@@ -30,6 +30,7 @@ header{
 
 .header__container p {
     width: 80%;
+    max-width: 750px;
     text-align: center;
     margin: 0.5rem;
 }

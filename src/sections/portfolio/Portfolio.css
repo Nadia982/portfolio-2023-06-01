@@ -10,6 +10,7 @@
     padding: 0.5rem 1.5rem;
     box-shadow: 0 1px 1px 0 grey;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-white);
 }
 
 .portfolio__categories > button.primary:hover  {
@@ -38,7 +39,7 @@
 }
 
 .portfolio__project{
-    background: var(--color-light);
+    background: var(--color-white);
     animation: animateProject 600ms ease-in forwards;
     max-width: 20em;
     margin: 0 auto;
@@ -78,6 +79,7 @@
     border: 1px solid var(--color-primary);
 }
 
-.secondary:hover{
-    background: var(--color-light);
+.white:hover{
+    border: 1px solid var(--color-primary);
+    background: var(--color-white)
 }

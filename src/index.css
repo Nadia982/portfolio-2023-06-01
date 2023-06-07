@@ -127,7 +127,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--color-light);
+  /* background: var(--color-light); */
   color: var(--color-black);
   padding: 0.6rem 2.5rem;
   border: 2px solid transparent;
@@ -136,8 +136,8 @@ img {
 }
 
 .btn:hover {
-  background-color: transparent;
-  border-color: var(--color-light);
+  /* background-color: transparent; */
+  /* border-color: var(--color-light); */
   transform: translateY(-0.3rem);
 }
 
@@ -150,8 +150,8 @@ img {
 }
 
 .btn.white:hover {
-  background: transparent;
-  border-color: var(--color-white);
+  /* background: transparent; */
+  /* border-color: var(--color-white); */
 }
 
 .btn.primary {

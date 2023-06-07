@@ -15,7 +15,7 @@ const ProjectCategories = ({categories, onFilterProjects}) => {
     <div className="portfolio__categories">
       {
         categories.map(category => (
-          <CategoryButton key={category} category={category} onChangeCategory={()=> changeCategoryHandler(category)} className={`btn cat__btn ${activeCategory === category ? 'primary' : 'light'}`}/>
+          <CategoryButton key={category} category={category} onChangeCategory={()=> changeCategoryHandler(category)} className={`btn cat__btn ${activeCategory === category ? 'primary' : 'white'}`}/>
         ))
       }
 
