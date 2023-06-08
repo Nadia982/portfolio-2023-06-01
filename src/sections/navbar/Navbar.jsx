@@ -29,11 +29,12 @@ const Navbar = () => {
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
-        </nav>
-
         <button className="nav-btn nav-open-btn" onClick={showNavbar}>
           <FaBars />
         </button>
+        </nav>
+
+        
         {/* <button id="accessibility__options"><IoAccessibility/><p>Accessibility options</p> </button> */}
       
     </div>
