@@ -12,11 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav ref={navRef} id="navbar">
       <div className="container nav__container">
+
         <a href="index.html" className="nav__logo">
           Natalie Gillam - React Developer
         </a>
+
+        <nav ref={navRef} >
         <ul className="nav__menu">
           {data.map((item) => (
             <li key={item.id}>
@@ -27,12 +29,14 @@ const Navbar = () => {
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
-        <button className="nav-btn" onClick={showNavbar}>
+        </nav>
+
+        <button className="nav-btn nav-open-btn" onClick={showNavbar}>
           <FaBars />
         </button>
         {/* <button id="accessibility__options"><IoAccessibility/><p>Accessibility options</p> </button> */}
-      </div>
-    </nav>
+      
+    </div>
   );
 };
 
