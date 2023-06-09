@@ -11,8 +11,8 @@
   justify-content: space-between;
   padding: 0 5vw;
   background: rgb(27,0,36);
-background: linear-gradient(90deg, rgba(27,0,36,1) 0%, rgba(134,36,187,1) 32%, rgba(208,18,213,1) 100%);
-  /* background: var(--color-primary); */
+/* background: linear-gradient(90deg, rgba(27,0,36,1) 0%, rgba(134,36,187,1) 32%, rgba(208,18,213,1) 100%); */
+background: linear-gradient(45deg, var(--color-black) 0%, var(--color-primary) 100%);
   position: fixed;
   top: 0;
   z-index: 9;
