@@ -151,7 +151,7 @@ img {
 
 .btn.white:hover {
   /* background: transparent; */
-  /* border-color: var(--color-white); */
+  border-color: var(--color-white);
 }
 
 .btn.primary {

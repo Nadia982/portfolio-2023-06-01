@@ -10,7 +10,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
-  background: var(--color-primary);
+  background: rgb(27,0,36);
+background: linear-gradient(90deg, rgba(27,0,36,1) 0%, rgba(134,36,187,1) 32%, rgba(208,18,213,1) 100%);
+  /* background: var(--color-primary); */
   position: fixed;
   top: 0;
   z-index: 9;
@@ -24,7 +26,7 @@
 
 .nav-btn {
   font-size: 2rem;
-  background-color: var(--color-primary);
+  background-color: transparent;
   color: var(--color-white);
   cursor: pointer;
   padding: 0.2em;
