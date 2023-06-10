@@ -16,7 +16,7 @@ import "./Certifications.css";
 
 const Certifications = () => {
   return (
-    <section id="testimonials">
+    <section id="certifications">
       <h2>Certifications</h2>
       <p>I have certifications in the following technologies:</p>
       <div className="container">
@@ -31,7 +31,7 @@ const Certifications = () => {
         >
           {certifications.map((certification) => (
             <SwiperSlide key={certification.id}>
-              <Certification />
+              <Certification certification={certification}/>
             </SwiperSlide>
           ))}
         </Swiper>
