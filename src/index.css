@@ -10,7 +10,7 @@
 
 :root {
   --primary-hue: 279;
-  --black-lightness: 10%;
+  --black-lightness: 15%;
   --dark-lightness: 44%;
   --light-lightness: 94%;
   --white-lightness: 100%;
@@ -156,6 +156,7 @@ img {
 
 .btn.primary {
   background: var(--color-primary);
+  /* background: linear-gradient(45deg, var(--color-black) 0%, var(--color-primary) 100%); */
   color: white;
 }
 
