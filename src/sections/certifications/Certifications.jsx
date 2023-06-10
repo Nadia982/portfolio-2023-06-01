@@ -22,7 +22,7 @@ const Certifications = () => {
     <section id="certifications">
       <h2>Certifications</h2>
       <p>I have certifications in the following technologies:</p>
-      <div className="container">
+      <div className="container certification-container">
         <Swiper
           slidesPerView={2}
           breakpoints={{
@@ -31,7 +31,7 @@ const Certifications = () => {
             1201: {slidesPerView: 5}
           }}
           // scrollbar={{draggable: true}}
-          spaceBetween={20}
+          // spaceBetween={20}
           keyboard={{
             enabled: true,
           }}
