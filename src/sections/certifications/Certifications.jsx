@@ -1,12 +1,15 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Keyboard, Pagination, Navigation} from "swiper";
 
 //import data
 import certifications from "./data";
@@ -21,12 +24,28 @@ const Certifications = () => {
       <p>I have certifications in the following technologies:</p>
       <div className="container">
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          slidesPerView={2}
+          breakpoints={{
+            601: {slidesPerView: 3},
+            961: {slidesPerView: 4},
+            1201: {slidesPerView: 5}
+          }}
+          // scrollbar={{draggable: true}}
+          spaceBetween={20}
+          keyboard={{
+            enabled: true,
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          navigation={true}
+          modules={[Keyboard, Pagination, Navigation, Autoplay]}
+          // autoplay={true}
+          autoplay={{delay: 0}}
+          disableOnInteraction={true}
+          // autoplayTimeout={2}
+          speed={2000}
+          loop={true}
           className="mySwiper"
         >
           {certifications.map((certification) => (

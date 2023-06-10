@@ -8,17 +8,17 @@
 
 .portfolio__categories > button {
     padding: 0.5rem 1.5rem;
-    box-shadow: 0 1px 1px 0 grey;
+    box-shadow: 0 2px 2px 0 grey;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
 }
 
 .portfolio__categories > button.primary:hover  {
     border:none;
     background-color: var(--color-primary);
-    color: var(--color-white)
+    color: var(--color-white);
 }
-
 
 .portfolio__projects {
     display: grid;
