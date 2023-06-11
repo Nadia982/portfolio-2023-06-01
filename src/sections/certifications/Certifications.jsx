@@ -44,7 +44,7 @@ const Certifications = () => {
           autoplay={{delay: 0}}
           disableOnInteraction={true}
           // autoplayTimeout={2}
-          speed={2000}
+          speed={1000}
           loop={true}
           className="mySwiper"
         >
