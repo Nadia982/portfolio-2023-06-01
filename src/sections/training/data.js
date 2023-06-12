@@ -2,25 +2,25 @@ const data = [
   {
     id: 1,
     title: "HTML",
-    certifications: [
+    courses: [
       {
         title: "HTML Essential Training",
         courseLength: "2h 45m",
         dateCompleted: "11th May 2021",
-        link: "https://www.linkedin.com/learning/certificates/666d043441430f54b233f6fcf7301cb180b65df0660684925b90e1d12e52f485?trk=share_certificate",
+        link: "https://www.linkedin.com/learning/certificates/666d043441430f54b233f6fcf7301cb180b65df0660684925b90e1d12e52f485",
       },
       {
         title: "HTML: Tables",
         courseLength: "1h 25m",
         dateCompleted: "25th January 2022",
-        link: "https://www.linkedin.com/learning/certificates/1ab5b68043fc9a6ba930a423ab52d0d8c1eecf5501fa453690a48f00f75423b9?trk=share_certificate"
+        link: "https://www.linkedin.com/learning/certificates/1ab5b68043fc9a6ba930a423ab52d0d8c1eecf5501fa453690a48f00f75423b9"
       },
     ],
   },
   {
     id: 2,
     title: "CSS",
-    certifications: [
+    courses: [
       {
         id: 1, 
         title: "CSS Essential Training",
@@ -35,6 +35,8 @@ const data = [
         dateCompleted: "15th September 2021",
         link: "https://www.linkedin.com/learning/certificates/013c6bfcaed5b978ccec6d568a7d278d7ce0ca845c52671509a269492991b0d4"
       },
-    ],
+    ],  
   }
 ];
+
+export default data

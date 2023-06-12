@@ -1,0 +1,9 @@
+#training-card__course a {
+    color: var(--color-black);
+    text-decoration: underline;
+}
+
+#training-card__course a:hover, #training-card__course a:focus {
+    color: var(--color-primary);
+}
+
