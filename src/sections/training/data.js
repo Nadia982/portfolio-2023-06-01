@@ -22,12 +22,14 @@ const data = [
     title: "CSS",
     certifications: [
       {
+        id: 1, 
         title: "CSS Essential Training",
         courseLength: "4h 29m",
         dateCompleted: "26th June 2021",
         link: "https://www.linkedin.com/learning/certificates/1773521a1b9e22b96e64231a902925dcb8ec96595fdf77a669c96321de64eb72",
       },
       {
+        id: 2,
         title: "CSS: Selectors",
         courseLength: "2h 19m",
         dateCompleted: "15th September 2021",
