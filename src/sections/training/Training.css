@@ -7,3 +7,27 @@
     color: var(--color-primary);
 }
 
+.training__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 4rem;
+    /* align-items: start; */
+}
+
+.training-card > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.training-card h4 {
+    line-height: 1.4rem;
+}
+
+.training-card__icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-black);
+    background: transparent;
+}

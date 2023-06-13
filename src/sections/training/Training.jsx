@@ -7,8 +7,8 @@ const Training = () => {
     <section id="training">
       <h2>Training</h2>
       <p>
-        Click on the headings below for details of training I have
-        completed in each technology.
+        Click on the headings below for details of certifications I have
+        obtained in each of these technologies.
       </p>
       <div className="container training__container">
         {training.map(trainingItem => (
