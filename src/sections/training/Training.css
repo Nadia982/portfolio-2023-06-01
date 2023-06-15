@@ -1,3 +1,7 @@
+#training {
+    text-align: center;
+}
+
 #training-card__course a {
     color: var(--color-black);
     text-decoration: underline;
@@ -12,6 +16,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 0 4rem;
     /* align-items: start; */
+}
+
+.training-card {
+    background-color: var(--color-light);
 }
 
 .training-card > div:first-of-type {

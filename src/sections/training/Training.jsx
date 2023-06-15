@@ -5,7 +5,7 @@ import "./Training.css";
 const Training = () => {
   return (
     <section id="training">
-      <h2>Training</h2>
+      {/* <h2>Training</h2> */}
       <p>
         Click on the headings below for details of certifications I have
         obtained in each of these technologies.

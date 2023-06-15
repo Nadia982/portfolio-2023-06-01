@@ -1,10 +1,18 @@
 .card {
-    background: var(--color-white);
+    /* background: var(--color-white); */
     padding: 1.5rem;
     border: 2px solid transparent;
     border-radius: var(--border-radius-1);
     transition: var(--transition);
 }
+
+section:nth-of-type(odd) .card {
+    background: var(--color-white);
+  }
+
+section:nth-of-type(even) .card {
+    background: var(--color-light);
+  }
 
 .card:hover {
     /* background: transparent; */
@@ -12,12 +20,12 @@
     transform: translateY(-0.3rem);
 }
 
-.card.light {
+/* .card.light {
     background: var(--color-light);
-}
+}  */
 
 .card.light:hover {
-    /* background: transparent; */
+    background: transparent;
     border-color: var(--color-light);
 }
 

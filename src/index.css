@@ -57,11 +57,14 @@ body {
 /* GENERAL SECTION STYLES */
 section {
   padding: 2rem 0;
-  background: var(--color-light);
   transition: var(--transition);
 }
 
-section:nth-child(even) {
+section:nth-of-type(odd) {
+background: var(--color-light);
+}
+
+section:nth-of-type(even) {
   background: var(--color-white);
 }
 

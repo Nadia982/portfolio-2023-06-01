@@ -3,9 +3,9 @@ import Card from "../../components/Card"
 
 const Certification = ({certification}) => {
   return (
-    <div className="certification-card">
+    <Card className="certification-card">
       <small>{certification.skill}</small>
-    </div>
+    </Card>
   )
 }
 
