@@ -6,12 +6,12 @@ const TrainingCard = ({ trainingItem }) => {
   const [showAnswer, setShowAnswer] = useState(false)
 
   return (
-    <Card className="training-card">
+    <Card className="training-card" onClick={()=> setShowAnswer(!showAnswer)}>
       <div>
         <h4 className="training-card__question">{trainingItem.title}</h4>
         <button className="training-card__icon">
-          {!showAnswer && <AiOutlinePlus />}
-        </button>
+          {showAnswer ? <AiOutlineMinus /> : <AiOutlinePlus/>}
+          </button>
       </div>
       {showAnswer && <div id="training-card__course">
         {trainingItem.courses?.map((course) => (

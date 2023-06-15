@@ -4,6 +4,8 @@
     border: 2px solid transparent;
     border-radius: var(--border-radius-1);
     transition: var(--transition);
+    width: 80%;
+    margin: 0.5rem auto;
 }
 
 section:nth-of-type(odd) .card {
