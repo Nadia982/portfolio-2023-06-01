@@ -1,7 +1,7 @@
 import Navbar from './sections/navbar/Navbar';
 import Header from './sections/header/Header';
 import About from './sections/about/About';
-import Skills from './sections/skills/Skills';
+// import Skills from './sections/skills/Skills';
 import Portfolio from './sections/portfolio/Portfolio';
 import Training from './sections/training/Training';
 import Contact from './sections/contact/Contact';
@@ -13,14 +13,13 @@ const App = () => {
   return (
     <main>
         <Navbar/>
-        
-        <Header/>
+        {/* <Header/>
         <Training/>
         <Certifications/>
         
-        <Portfolio/>
+        <Portfolio/> */}
         {/* <Skills/> */}
-        <About/>
+        {/* <About/> */}
         
         <Contact/>
         <Footer/>

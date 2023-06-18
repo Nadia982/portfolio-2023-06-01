@@ -42,7 +42,7 @@ const Certifications = () => {
           modules={[Keyboard, Pagination, Navigation, Autoplay]}
           // autoplay={true}
           autoplay={{delay: 0}}
-          disableOnInteraction={true}
+          // disableOnInteraction={true}
           // autoplayTimeout={2}
           speed={1500}
           loop={true}

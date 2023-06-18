@@ -4,12 +4,14 @@ const data = [
     title: "HTML",
     courses: [
       {
+        id: 1,
         title: "HTML Essential Training",
         courseLength: "2h 45m",
         dateCompleted: "11th May 2021",
         link: "https://www.linkedin.com/learning/certificates/666d043441430f54b233f6fcf7301cb180b65df0660684925b90e1d12e52f485",
       },
       {
+        id: 2,
         title: "HTML: Tables",
         courseLength: "1h 25m",
         dateCompleted: "25th January 2022",

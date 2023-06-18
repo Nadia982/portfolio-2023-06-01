@@ -20,13 +20,13 @@ const data = [
   { id: 19, skill: "Test-driven development" },
   { id: 20, skill: "Webpack" },
   { id: 21, skill: "Code refactoring" },
-  { id: 21, skill: "Redux" },
-  { id: 22, skill: "Coding best practices" },
-  { id: 23, skill: "Unit testing" },
-  { id: 24, skill: "Integration testing" },
-  { id: 25, skill: "Jest" },
-  { id: 26, skill: "Agile/kanban" },
-  { id: 27, skill: "Jira" },
+  { id: 22, skill: "Redux" },
+  { id: 23, skill: "Coding best practices" },
+  { id: 24, skill: "Unit testing" },
+  { id: 25, skill: "Integration testing" },
+  { id: 26, skill: "Jest" },
+  { id: 27, skill: "Agile/kanban" },
+  { id: 28, skill: "Jira" },
 ];
 
 export default data;
