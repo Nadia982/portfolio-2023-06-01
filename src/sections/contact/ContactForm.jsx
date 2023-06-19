@@ -6,16 +6,38 @@ const ContactForm = () => {
       email: "",
     },
   });
-  console.log(formik)
+  console.log(formik);
   return (
     <form autoComplete="off">
-      <label htmlFor="email">Email</label>
-      <input value={formik.values.email}
+      <label htmlFor="name">Name</label>
+      <input
+        value={formik.values.name}
         onChange={formik.handleChange}
-      id="email" type="email" placeholder="Enter your email" />
+        id="name"
+        type="text"
+        placeholder="Name"
+      />
+
+      <label htmlFor="email">Email</label>
+      <input
+        value={formik.values.email}
+        onChange={formik.handleChange}
+        id="email"
+        type="email"
+        placeholder="Email address"
+      />
+
+      <label htmlFor="message">Message</label>
+      <textarea
+        value={formik.values.message}
+        onChange={formik.handleChange}
+        id="message"
+        type="text"
+        placeholder="Enter your message"
+      />
+      <input type="submit" id="submit" />
     </form>
   );
 };
 
 export default ContactForm;
-
