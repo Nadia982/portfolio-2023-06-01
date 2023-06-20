@@ -1,48 +1,82 @@
 import { useFormik } from "formik";
 
+const initialValues = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+const onSubmit = (values) => {
+  console.log("Form data", values);
+};
+
+const validate = (values) => {
+  let errors = {};
+
+  if (!values.name) {
+    errors.name = "Required";
+  }
+
+  if (!values.email) {
+    errors.email = "Required";
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Invalid email format";
+  }
+
+  if (!values.message) {
+    errors.message = "Required";
+  }
+
+  return errors;
+};
+
 const ContactForm = () => {
   const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-    onSubmit: (values) => {
-      console.log("Form data", values);
-    },
+    initialValues,
+    onSubmit,
+    validate,
   });
-  // console.log('Form values', formik.values);
+
+  console.log("Form errors", formik.errors);
+
   return (
     <form onSubmit={formik.handleSubmit} autoComplete="off">
-      <label htmlFor="name">Name</label>
-      <input
-        value={formik.values.name}
-        onChange={formik.handleChange}
-        id="name"
-        type="text"
-        placeholder="Name"
-        name="name"
-      />
-
-      <label htmlFor="email">Email</label>
-      <input
-        value={formik.values.email}
-        onChange={formik.handleChange}
-        id="email"
-        type="email"
-        placeholder="Email address"
-        name="email"
-      />
-
-      <label htmlFor="message">Message</label>
-      <textarea
-        value={formik.values.message}
-        onChange={formik.handleChange}
-        id="message"
-        type="text"
-        placeholder="Enter your message"
-        name="message"
-      />
+      <div className="form-control">
+        <label htmlFor="name">Name</label>
+        <input
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          id="name"
+          type="text"
+          placeholder="Name"
+          name="name"
+        />
+        {formik.errors.name ? <div className="error">{formik.errors.name}</div> : null}
+      </div>
+      <div className="form-control">
+        <label htmlFor="email">Email</label>
+        <input
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          id="email"
+          type="email"
+          placeholder="Email address"
+          name="email"
+        />
+        {formik.errors.email ? <div className="error">{formik.errors.email}</div> : null}
+      </div>
+      <div className="form-control">
+        <label htmlFor="message">Message</label>
+        <textarea
+          value={formik.values.message}
+          onChange={formik.handleChange}
+          id="message"
+          type="text"
+          placeholder="Enter your message"
+          name="message"
+        />
+        {formik.errors.message ? <div className="error">{formik.errors.message}</div> : null}
+      </div>
       <button type="submit" id="submit">
         Submit
       </button>
