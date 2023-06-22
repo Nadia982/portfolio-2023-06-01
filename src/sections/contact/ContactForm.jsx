@@ -37,7 +37,9 @@ const ContactForm = () => {
     validate,
   });
 
-  console.log("Form errors", formik.errors);
+  console.log("Visited fields", formik.touched);
+
+
 
   return (
     <form onSubmit={formik.handleSubmit} autoComplete="off">
@@ -46,36 +48,45 @@ const ContactForm = () => {
         <input
           value={formik.values.name}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="name"
           type="text"
           placeholder="Name"
           name="name"
         />
+        <div className="error-container">
         {formik.errors.name ? <div className="error">{formik.errors.name}</div> : null}
+        </div>
       </div>
       <div className="form-control">
         <label htmlFor="email">Email</label>
         <input
           value={formik.values.email}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="email"
           type="email"
           placeholder="Email address"
           name="email"
         />
+        <div className="error-container">
         {formik.errors.email ? <div className="error">{formik.errors.email}</div> : null}
+        </div>
       </div>
       <div className="form-control">
         <label htmlFor="message">Message</label>
         <textarea
           value={formik.values.message}
           onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="message"
           type="text"
           placeholder="Enter your message"
           name="message"
         />
+        <div className="error-container">
         {formik.errors.message ? <div className="error">{formik.errors.message}</div> : null}
+        </div>
       </div>
       <button type="submit" id="submit">
         Submit

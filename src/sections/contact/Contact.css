@@ -9,6 +9,10 @@ form {
   text-align: left;
  }
 
+ .error-container{
+  height: 1.2rem;
+ }
+
 .checkbox {
   display: flex;
   justify-content: flex-start;
@@ -21,7 +25,7 @@ form label {
   font-weight: bold;
   display: block;
   text-align: left;
-  margin: 1rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
 input,
