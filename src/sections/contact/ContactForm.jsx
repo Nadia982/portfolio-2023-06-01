@@ -55,7 +55,7 @@ const ContactForm = () => {
           name="name"
         />
         <div className="error-container">
-        {formik.errors.name ? <div className="error">{formik.errors.name}</div> : null}
+        {formik.touched.name && formik.errors.name ? <div className="error">{formik.errors.name}</div> : null}
         </div>
       </div>
       <div className="form-control">
@@ -70,7 +70,7 @@ const ContactForm = () => {
           name="email"
         />
         <div className="error-container">
-        {formik.errors.email ? <div className="error">{formik.errors.email}</div> : null}
+        {formik.touched.email && formik.errors.email ? <div className="error">{formik.errors.email}</div> : null}
         </div>
       </div>
       <div className="form-control">
@@ -85,7 +85,7 @@ const ContactForm = () => {
           name="message"
         />
         <div className="error-container">
-        {formik.errors.message ? <div className="error">{formik.errors.message}</div> : null}
+        {formik.touched.message && formik.errors.message ? <div className="error">{formik.errors.message}</div> : null}
         </div>
       </div>
       <button type="submit" id="submit">
