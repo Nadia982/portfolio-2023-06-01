@@ -11,17 +11,38 @@ const onSubmit = (values) => {
   console.log("Form data", values);
 };
 
+const validate = (values) => {
+  let errors = {};
+
+  if (!values.name) {
+    errors.name = "Required";
+  }
+
+  if (!values.email) {
+    errors.email = "Required";
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = "Invalid email format";
+  }
+
+  if (!values.message) {
+    errors.message = "Required";
+  }
+
+  return errors;
+};
+
 const validationSchema = Yup.object({
   name: Yup.string().required('Required'),
   email: Yup.string().email('Invalid email format').required('Required'),
   message: Yup.string().required('Required')
 })
 
-const ContactForm = () => {
+const OldContactForm = () => {
   const formik = useFormik({
     initialValues,
     onSubmit,
     validationSchema
+    // validate,
   });
 
   console.log("Visited fields", formik.touched);
@@ -33,7 +54,9 @@ const ContactForm = () => {
       <div className="form-control">
         <label htmlFor="name">Name</label>
         <input
-         {...formik.getFieldProps('name')}
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="name"
           type="text"
           placeholder="Name"
@@ -46,7 +69,9 @@ const ContactForm = () => {
       <div className="form-control">
         <label htmlFor="email">Email</label>
         <input
-          {...formik.getFieldProps('email')}
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="email"
           type="email"
           placeholder="Email address"
@@ -59,7 +84,9 @@ const ContactForm = () => {
       <div className="form-control">
         <label htmlFor="message">Message</label>
         <textarea
-          {...formik.getFieldProps('message')}
+          value={formik.values.message}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
           id="message"
           type="text"
           placeholder="Enter your message"
@@ -76,4 +103,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default OldContactForm;
