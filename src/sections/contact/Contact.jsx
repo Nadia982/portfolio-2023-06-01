@@ -7,6 +7,7 @@ const Contact = () => {
     <section id="contact">
       <h2>Contact Me</h2>
     <ContactForm/>
+
     </section>
   )
 }
