@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import TextError from "./TextError";
 
 const initialValues = {
   name: "",
@@ -29,7 +30,7 @@ const ContactForm = () => {
           <label htmlFor="name">Name</label>
           <Field id="name" type="text" placeholder="Name" name="name" />
           <div className="error-container">
-            <ErrorMessage name="name" />
+            <ErrorMessage name="name" component={TextError}/>
           </div>
         </div>
         <div className="form-control">
@@ -41,19 +42,20 @@ const ContactForm = () => {
             name="email"
           />
           <div className="error-container">
-            <ErrorMessage name="email" />
+            <ErrorMessage name="email" component={TextError}/>
           </div>
         </div>
         <div className="form-control">
           <label htmlFor="message">Message</label>
           <Field
+          as='textarea'
             id="message"
             type="text"
             placeholder="Enter your message"
             name="message"
           />
           <div className="error-container">
-            <ErrorMessage name="message" />
+            <ErrorMessage name="message" component={TextError}/>
           </div>
         </div>
         <button type="submit" id="submit">

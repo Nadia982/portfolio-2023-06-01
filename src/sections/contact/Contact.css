@@ -83,7 +83,3 @@ input[type="checkbox"] {
   color: var(--color-primary);
   background-color: var(--color-white);
 }
-
-#message {
-  height: 4rem;
-}
