@@ -19,6 +19,7 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm = () => {
+
   return (
     <Formik
       initialValues={initialValues}
@@ -28,7 +29,9 @@ const ContactForm = () => {
       <Form>
         <div className="form-control">
           <label htmlFor="name">Name</label>
-          <Field id="name" type="text" placeholder="Name" name="name" />
+          <Field id="name" type="text" placeholder="Name" name="name" 
+          // value={name}
+          />
           <div className="error-container">
             <ErrorMessage name="name" component={TextError}/>
           </div>
