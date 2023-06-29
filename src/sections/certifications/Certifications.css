@@ -37,3 +37,8 @@
     opacity: 0.4;
     color: black;
 }
+
+.link-to-training a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}

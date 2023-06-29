@@ -20,8 +20,8 @@ import "./Certifications.css";
 const Certifications = () => {
   return (
     <section id="certifications">
-      <h2>Certifications</h2>
-      <p>I have skills in the following technologies.</p>
+      <h2>Skills</h2>
+      <p>I have skills in the following technologies. <span className="link-to-training"><a  href="#skills-all">See all</a></span> </p>
       <div className="container certification-container">
         <Swiper
           slidesPerView={2}

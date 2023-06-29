@@ -6,7 +6,7 @@ const Training = () => {
   return (
     <section id="training">
       {/* <h2>Training</h2> */}
-      <p>
+      <p id="skills-all">
         Click on the headings below for details of certifications I have
         obtained in each of these technologies.
       </p>
