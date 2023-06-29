@@ -21,7 +21,7 @@ const Certifications = () => {
   return (
     <section id="certifications">
       <h2>Certifications</h2>
-      <p>I have certifications in the following technologies:</p>
+      <p>I have skills in the following technologies.</p>
       <div className="container certification-container">
         <Swiper
           slidesPerView={2}

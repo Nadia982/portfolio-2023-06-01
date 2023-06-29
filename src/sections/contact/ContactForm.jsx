@@ -1,4 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import {Formik, Form, Field, ErrorMessage, useFormik } from "formik";
 import * as Yup from "yup";
 import TextError from "./TextError";
 
@@ -8,7 +8,8 @@ const initialValues = {
   message: "",
 };
 
-const onSubmit = (values) => {
+const onSubmit = (values, actions) => {
+  console.log(actions);
   console.log("Form data", values);
 };
 
